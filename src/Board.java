@@ -132,6 +132,7 @@ public class Board {
     public ArrayList<Move> getMovesForPawn(Piece piece) {
         int pieceRank = piece.getRank();
         int pieceFile = piece.getFile();
+
         int pieceColor = (piece.getType() <= 6) ? 0 : 1;
 
     }
