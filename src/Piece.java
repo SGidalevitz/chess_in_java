@@ -20,16 +20,13 @@ public class Piece {
     public Board getParentBoard() {
         return parentBoard;
     }
-    public void updateLocAndType(Square pos, int type) {
-        this.pos = pos;
-        this.type = type;
-    }
     public char getPieceAsChar() {
         return getPieceIDToCharMap().get(type);
     }
     public void setType(int type) {
         this.type = type;
     }
+    //Map for printing out piece abbreviations
     public HashMap<Integer, Character> getPieceIDToCharMap() {
         HashMap<Integer, Character> pieceIDToCharMap = new HashMap<Integer, Character>();
         pieceIDToCharMap.put(0, ' ');

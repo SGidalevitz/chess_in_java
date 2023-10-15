@@ -22,6 +22,7 @@ public class Square {
     public int[] getCoords() {
         return new int[]{rank, file};
     }
+    //Map for reading coordinates in chess coordinate notation, like e4 or h7
     public HashMap<Character, Integer> getPosToPieceIDMap() {
         HashMap<Character, Integer> posToPieceIDMap = new HashMap<Character, Integer>();
         posToPieceIDMap.put('a', 1);
